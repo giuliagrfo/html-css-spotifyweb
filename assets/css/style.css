@@ -167,6 +167,7 @@ img {
 /* #region SIDEBAR */
 .sidebar {
     background-color: var(--dark);
+    height: 100%;
 }
 
 .rw_sidebar {
@@ -195,6 +196,9 @@ img {
     vertical-align: middle;
 }
 
+.home {
+    border-left: 3px solid var(--accent);
+}
 .playlist {
     margin-top: 1rem;
 }
@@ -249,8 +253,28 @@ img {
 }
 
 
-/* #header {
+#header {
+    margin-left: -0.5rem;
+    width: 82%;
+    height: 50px;
     position: fixed;
     display: flex;
     justify-content: end;
-} */
+    align-items: center;
+    background-color: #0000008c;
+}
+
+#header a {
+    color: var(--light);
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 0.5rem 2rem;
+    border: 1px solid var(--light);
+    border-radius: 3.5rem;
+}
+
+.wrap_col {
+    margin-top: 9rem;
+    overflow-y: scroll;
+}
