@@ -164,25 +164,25 @@ img {
 /* #region SIDEBAR */
 .sidebar {
     background-color: var(--dark);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
 }
 
-.sidebar_top img {
+.sidebar_top {
+    width: 100%;
+}
+
+.logo img {
     width: 60%;
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 0.5rem;
 }
 
-.icons img {
+.icons img, .add_playlist i {
     width: 10%;
+    margin: 0.25rem 0;
     vertical-align: middle;
 }
 
-.icons span {
-    font-size: 15px;
+.icons span, .add_playlist, .new_pl {
+    font-size: 10px;
     font-weight: bold;
     vertical-align: middle;
 }
@@ -193,10 +193,20 @@ img {
 
 .playlist h4 {
     color: var(--light);
+    font-size: 10px;
+}
+
+.playlist h5 {
+    margin-top: 0.5rem;
+    
+}
+
+.add_playlist i {
+    margin-right: 1rem;
 }
 
 .playlist i {
-    font-size: 40px;
+    font-size: 30px;
     color: var(--secondary-soft);
 }
 
