@@ -18,7 +18,17 @@
 
 .row {
     display: flex;
+    
 }
+
+.wrapper{
+    height: 100vh;
+}
+
+#container {
+    height: calc (100vh - 100px);
+}
+
 
 /* #region COLUMN */
 .col_1 {
@@ -75,7 +85,6 @@
 /* #region DEBUG */
     #top {
         background-color: blue;
-        height: 500px;
     }
 
     #bottom {
@@ -86,10 +95,45 @@
     .sidebar {
         background-color: pink;
         height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .sidebar_top {
+        background-color: gray;
+        height: 300px;
+    }
+    
+    .sidebar_bottom {
+        background-color: rgb(119, 214, 72);
+        height: 50px;
     }
 
     .categories {
         background-color: aqua;
-        height: 500px;
+        overflow: auto;
     }
+
+    #header {
+        background-color: #141922;
+        height: 100px;
+    }
+
+    .kind_nav {
+        background-color: #C1C1C1;
+        height: 50px;
+    }
+
+    .recently_py, .foryou {
+        background-color: blue;
+        margin: 1rem 1rem;
+    }
+
+    .top {
+        background-color: violet;
+        height: 50%;
+        margin-top: 1rem;
+    }
+
 /* #endregion DEBUG */
