@@ -4,37 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Spotify</title>
 </head>
-<body class="debug">
+<body>
     <div class="wrapper">
 
         <div id="container">
             
                 <div class="row">
                     <div class="col_2 sidebar">
-                        <div class="sidebar_top"></div>
+                        <div class="sidebar_top">
+                            <div class="logo">
+                                <img src="./assets/img/logo.svg" alt="">
+                            </div>
+                            <div class="icons">
+                                <img src="./assets/img/home.svg" alt="">
+                                <span>Home</span>
+                            </div>
+                            <div class="icons">
+                                <img src="./assets/img/search.svg" alt="">
+                                <span>Cerca</span>
+                            </div>
+                            <div class="icons">
+                                <img src="./assets/img/libreria.svg" alt="">
+                                <span>La tua libreria</span>
+                            </div>
+
+                            <div class="playlist">
+                                <h4>PLAYLIST</h4>
+                                <i class="fa-sharp fa-solid fa-square-plus"></i> <span>Crea Playlist</span>
+                            </div>
+                         
+                            
+                        </div>
                         <div class="sidebar_bottom"></div>
                     </div>
                     <div class="col_10 categories">
-                        <div class="upgrade" id="header"></div>
-                        <nav class="kind_nav"></nav>
+                        <!-- <div class="upgrade" id="header">
+                            <a href="#">EFFETTUA L'UPGRADE</a>
+                        </div> -->
 
-                        <div class="row rw_top">
-                            <div class="col_2 recently_py"></div>
-                            <div class="col_2 recently_py"></div>
-                            <div class="col_2 recently_py"></div>
-                            <div class="col_2 recently_py"></div>
-                            <div class="col_2 recently_py"></div>
-                            <div class="col_2 recently_py"></div>
+                        <div class="wrap_col">
+
+                            <nav class="kind_nav"></nav>
+    
+                            <div class="row rw_top">
+                                <div class="col_2 recently_py">
+                                    <img src="./assets/img/metal_lifting.jpg" alt="">
+                                </div>
+                                <div class="col_2 recently_py"></div>
+                                <div class="col_2 recently_py"></div>
+                                <div class="col_2 recently_py"></div>
+                                <div class="col_2 recently_py"></div>
+                                <div class="col_2 recently_py"></div>
+                                
+                            </div>
                             
-                        </div>
-                        
-                        <div class="row rw_top">
-                            <div class="col_2 foryou"></div>
-                            <div class="col_2 foryou"></div>
-
+                            <div class="row rw_top">
+                                <div class="col_2 foryou"></div>
+                                <div class="col_2 foryou"></div>
+    
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -45,7 +80,13 @@
         </div>
        
         <div id="bottom">
-            <div class="player"></div>
+            <div class="row">
+                <div class="col_ 2 left"></div>
+                <div class="col_8 center"></div>
+                <div class="col_2 right"></div>
+
+
+            </div>
         </div>
         <!-- bottom -->
 
