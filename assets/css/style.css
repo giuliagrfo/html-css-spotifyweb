@@ -16,6 +16,10 @@
     
 }
 
+.row {
+    display: flex;
+}
+
 /* #region COLUMN */
 .col_1 {
     width: calc(100% / 12 *1);
@@ -66,3 +70,26 @@
 }
 
 /* #endregion COLUMN */
+
+
+/* #region DEBUG */
+    #top {
+        background-color: blue;
+        height: 500px;
+    }
+
+    #bottom {
+        background-color: red;
+        height: 100px;
+    }
+
+    .sidebar {
+        background-color: pink;
+        height: 500px;
+    }
+
+    .categories {
+        background-color: aqua;
+        height: 500px;
+    }
+/* #endregion DEBUG */
