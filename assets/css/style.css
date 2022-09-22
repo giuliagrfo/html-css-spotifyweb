@@ -268,14 +268,12 @@ img {
 /* end sitebar-bottom */
 
 #header {
-    margin-left: -0.5rem;
-    width: 82%;
+    margin:0 -0.5rem;
     height: 100px;
-    position: fixed;
     display: flex;
     justify-content: end;
     align-items: center;
-    background-color: #0000008c;
+    background-color: #00000045;
 }
 
 #header a {
@@ -284,6 +282,7 @@ img {
     text-decoration: none;
     font-size: 14px;
     padding: 1rem 2.5rem;
+    margin-right: 1rem;
     border: 1px solid var(--light);
     border-radius: 3.5rem;
 }
@@ -312,9 +311,15 @@ img {
 }
 
 .categories {
-    overflow: auto;
+    /* overflow: auto; */
     height: 100%;
     padding-top: 0;
+
+}
+
+.music {
+    overflow-y: auto;
+    height: calc(100% - 100px);
 }
 
 .row .main_categories {
@@ -322,7 +327,7 @@ img {
 }
 
 .wrap_col {
-    margin-top: 8rem;
+    margin-top: 2rem;
 }
 
 .wrap_col h4, .category h3 {
