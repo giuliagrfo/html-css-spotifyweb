@@ -170,6 +170,11 @@ img {
     height: 100%;
 }
 
+.side_nav {
+    height: 100%;
+    overflow: hidden;
+}
+
 .rw_sidebar {
     display: flex;
     flex-direction: column;
@@ -587,3 +592,4 @@ img {
     }
     
 }
+
