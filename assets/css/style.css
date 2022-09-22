@@ -189,12 +189,15 @@ img {
     margin-bottom: 1rem;
 }
 
+.logo .extra_sm {
+    display: none;
+}
+
 .icons img  {
     width: 12%;
     margin: 0.25rem 0;
     vertical-align: middle;
     filter: brightness(50%);
-
 }
 
 .icons span, .new_pl, .dw_app {
@@ -589,6 +592,20 @@ img {
     .col_xs_11 {
         width: calc(100% / 12 *11);
     }
-    
-}
+
+    .logo .large {
+        display: none;
+    }
+
+    .icons, .playlist, .dw_app, .avatar h4 {
+        display: none;
+    }
+
+    .logo .extra_sm {
+        display: block;
+        width: 80%;
+        margin: 0.3rem 0.3rem;
+      }
+    }
+
 
