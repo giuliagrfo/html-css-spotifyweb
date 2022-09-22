@@ -267,6 +267,9 @@ img {
 
 /* end sitebar-bottom */
 
+/* #endregion SIDEBAR */
+
+/* #region CATEGORIES */
 #header {
     margin:0 -0.5rem;
     height: 100px;
@@ -313,6 +316,7 @@ img {
 
 .categories {
     height: 100%;
+    padding-bottom: 0;
 }
 
 .music {
@@ -367,9 +371,7 @@ img {
     border-radius: 50%;
 }
 
-/* end main categories */
-
-
+/* #endregion CATEGORIES */
 
 /* #region PLAYER */
 #bottom {
@@ -404,6 +406,10 @@ img {
     margin-left: 3rem;
 }
 
+.left_ic {
+    margin-left: 3rem;
+}
+
 .left_ic i {
     color: var(--secondary-soft2);
     margin-right: 0.5rem;
@@ -434,7 +440,7 @@ img {
 
 .play {
     height: 2px;
-    width: 600px;
+    width: 500px;
     background-color: var(--secondary-soft2);
 }
 
@@ -455,3 +461,26 @@ img {
     background-color: var(--light);
     height: 3px;
 }
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.right i {
+    color: var(--light);
+    font-size: 15px;
+    margin: 0 0.5rem;
+}
+
+.right .play {
+    width: 150px;
+    margin-right: 0.5rem;
+}
+
+.right .riproduction {
+    width: 25px;
+}
+
+/* #endregion PLAYER */
