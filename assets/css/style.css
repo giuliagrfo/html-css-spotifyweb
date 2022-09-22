@@ -600,7 +600,7 @@ img {
         display: none;
     }
 
-    .icons span, .home, .playlist, .dw_app, .avatar h4 {
+    .icons span, .home, .playlist, .dw_app span, .avatar h4 {
         display: none;
     }
 
@@ -614,9 +614,14 @@ img {
 
     }
 
-    .icons img, .logo .extra_sm, .home_extra_sm {
+    .icons img, .logo .extra_sm, .home_extra_sm  {
         width: 100%;
     }   
+
+    .dw_app img {
+        width: 60%;
+        margin-left: 0.25rem;
+    }
     
     }
 
