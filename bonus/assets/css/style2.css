@@ -397,17 +397,21 @@ img {
     justify-content: flex-start;
 }
 
+.wrap_img {
+    transition: 1s ease-in-out;
+}
+
 .recently_py h6 {
     font-size: 13px;
     text-align: center;
     margin-top: 0.25rem;
 }
 
-
 .wrap_img {
     position: relative;
     float: left;
 }
+
 
 .createdforyou, .popular {
     margin: 2rem 0 1rem 0.5rem;
@@ -558,6 +562,10 @@ img {
 .icons:hover img {
     cursor: pointer;
     filter: brightness(100%);
+}
+
+.wrap_img:hover {
+    transform: scale(1.2);
 }
 
 .wrap_img:hover img {
