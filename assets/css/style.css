@@ -232,8 +232,6 @@ img {
 
 .playlist {
     margin-top: 1.5rem;
-    /* overflow-y: auto; */
-    /* height: 120px; */
 }
 
 .playlist h4, .avatar h4 {
