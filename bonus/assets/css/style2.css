@@ -309,34 +309,6 @@ img {
     margin-right: 3rem;
     border: 1px solid var(--light);
     border-radius: 3.5rem;
-    animation: first 5s;
-}
-
-@keyframes first {
-    0% { 
-        background-color: #00000045;
-        width: 250px;
-        height: 53px;
-
-      }
-
-      50% {
-        background-color: #a0f71c6a;
-        width: 300px;
-        height: 53px;
-      }
-     
-      90% {
-        background-color: #7c7d7b6a;
-        width: 245px;
-        height: 53px;
-      }
-
-      100% {
-        background-color: #00000045;
-        width: 245px;
-        height: 53px;
-      }
 }
 
 .music {
@@ -864,4 +836,52 @@ img {
 
 
 
+/* #region ANIMATION */
+.center .fa-circle-play {
+    animation: gelatine 1s infinite;
+  }
+  @keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
 
+  .add_playlist {
+    animation: shake 3s ease-in-out;
+  }
+
+  #header a {
+    animation: first 5s;
+  }
+
+  @keyframes shake {
+      0%, 100% {transform: translateX(0);}
+      10%, 30%, 50%, 70%, 90% {transform: translateX(-1px);}
+      20%, 40%, 60%, 80% {transform: translateX(5px);}
+  }
+
+  @keyframes first {
+    0% { 
+        background-color: #00000045;
+        width: 250px;
+        height: 53px;
+      }
+      50% {
+        background-color: #a0f71c6a;
+        width: 300px;
+        height: 53px;
+      }
+      90% {
+        background-color: #7c7d7b6a;
+        width: 245px;
+        height: 53px;
+      }
+      100% {
+        background-color: #00000045;
+        width: 245px;
+        height: 53px;
+      }
+}
+
+/* #endregion ANIMATION */
