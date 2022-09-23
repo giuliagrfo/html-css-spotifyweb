@@ -467,7 +467,7 @@ img {
 .playbar {
     height: 2px;
     width: 300px;
-    margin-right: 2rem;
+    margin-right: 1rem;
     background-color: var(--secondary-soft2);
 }
 
