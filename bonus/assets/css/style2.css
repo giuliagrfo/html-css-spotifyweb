@@ -466,7 +466,8 @@ img {
 
 .playbar {
     height: 2px;
-    width: 500px;
+    width: 300px;
+    margin-right: 2rem;
     background-color: var(--secondary-soft2);
 }
 
@@ -772,7 +773,7 @@ img {
     .sidebar {
         padding-bottom: 0;
     }
-    
+
     .new_pl {
         height: 180px;
         overflow: auto;
