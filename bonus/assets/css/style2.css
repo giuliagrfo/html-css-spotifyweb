@@ -634,6 +634,10 @@ img {
         width: 40px;
     }
 
+    .recently_py:nth-last-child(-n+2) {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 639px) {
@@ -672,6 +676,10 @@ img {
 
     .riproduction i {
         margin: 0;
+    }
+
+    .recently_py:nth-last-child(-n+4) {
+        display: none;
     }
 
 }
