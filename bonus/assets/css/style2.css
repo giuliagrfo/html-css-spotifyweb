@@ -656,6 +656,15 @@ img {
         width: calc(100% / 12 *8);
     }
     
+    #header {
+        height: 60px;
+    }
+
+    #header a {
+        font-size: 12px;
+        padding: 0.5rem 2.5rem;
+    }
+    
     .dw_app img {
         width: 15px;
     }
