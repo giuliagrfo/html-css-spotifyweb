@@ -192,7 +192,7 @@ img {
 }
 
 .logo img {
-    width: 60%;
+    width: 140px;
     margin-bottom: 1rem;
 }
 
@@ -264,7 +264,7 @@ img {
 }
 
 .dw_app img {
-    width: 5%;
+    width: 10px;
     vertical-align: middle;
     margin-right: 0.5rem;
 }
@@ -407,7 +407,7 @@ img {
 }
 
 .left img {
-    width: 10%;
+    width: 40px;
     margin: 1rem;
 }
 
@@ -466,7 +466,7 @@ img {
 
 .playbar {
     height: 2px;
-    width: 300px;
+    width: 500px;
     margin-right: 1rem;
     background-color: var(--secondary-soft2);
 }
@@ -498,7 +498,7 @@ img {
     margin: 0 0.5rem;
 }
 
-.right .play {
+.right .playbar {
     width: 150px;
     margin-right: 0.5rem;
 }
@@ -552,7 +552,6 @@ img {
     cursor: pointer;
     text-decoration: underline;
 }
-
 
 .center .fa-circle-play:hover {
     cursor: pointer;
@@ -639,6 +638,9 @@ img {
         display: none;
     }
 
+    .right .playbar {
+        width: 120px;
+    }
 }
 
 @media screen and (max-width: 639px) {
@@ -658,30 +660,47 @@ img {
         width: 15px;
     }
 
+    .recently_py:nth-last-child(-n+4) {
+        display: none;
+    }
+
     .left img {
         width: 40px;
     }
-
+    
     .left_ic {
         margin-left: 1.5rem;
     }
+    
+    .center {
+        margin: 1rem 0;
+    }
 
+    .center_icons i {
+        font-size: 15px;
+    }
+
+    .center .fa-circle-play {
+        font-size: 30px;
+    }
+    
     .time {
         margin: 0 0.5rem;
         font-size: 10px;
     }
     
     .riproduction {
-        width: 30%;
+        width: 30px;
     }
 
     .riproduction i {
         margin: 0;
     }
 
-    .recently_py:nth-last-child(-n+4) {
+    .right i:nth-child(-n+2), .left_ic {
         display: none;
     }
+    
 
 }
 
@@ -690,6 +709,14 @@ img {
         width: calc(100% / 12 *1);
     }
 
+    .col_xs_2 {
+        width: calc(100% / 12 *2); 
+    }
+    
+    .col_xs_8 {
+        width: calc(100% / 12 *8);
+    }
+    
     .col_xs_11 {
         width: calc(100% / 12 *11);
     }
@@ -709,10 +736,6 @@ img {
     .logo .extra_sm {
         display: block;
     } 
-
-    .icons img, .logo .extra_sm, .home_extra_sm  {
-        width: 100%;
-    }   
 
     .home_i {
         position: static;
@@ -735,7 +758,6 @@ img {
     }
     
     .dw_app img {
-        width: 70%;
         margin-left: 0.25rem;
     }
 
@@ -747,15 +769,18 @@ img {
         margin-left: 1rem;
     }
 
-    .song h6 {
-        font-size: 10px;
+    .song {
+        display: none;
     }
 
-    .song h5 {
-        font-size: 12px;
+    .left, .right {
+        justify-content: center;
     }
 
+    .right .playbar {
+        display: none;
     }
+}
 
 
 @media screen and (max-width: 1440px) and (min-width: 878px) {
@@ -766,6 +791,7 @@ img {
     .left img {
         width: 40px;
     }
+
 
 }
 
