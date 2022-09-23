@@ -769,9 +769,21 @@ img {
 }
 
 @media screen and (max-height: 600px) {
+    .sidebar {
+        padding-bottom: 0;
+    }
+    
     .new_pl {
         height: 180px;
         overflow: auto;
+    }
+
+    .music {
+        height: 100%;
+    }
+
+    #header {
+        display: none;
     }
 }
 /* #endregion RESPONSIVE */
