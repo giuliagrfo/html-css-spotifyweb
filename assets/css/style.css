@@ -288,6 +288,11 @@ img {
 /* #endregion SIDEBAR */
 
 /* #region CATEGORIES */
+.categories {
+    height: 100%;
+    padding-bottom: 0;
+}
+
 #header {
     margin:0 -0.5rem;
     height: 100px;
@@ -306,6 +311,22 @@ img {
     margin-right: 3rem;
     border: 1px solid var(--light);
     border-radius: 3.5rem;
+}
+
+.music {
+    max-width: 1440px;
+    overflow-y: auto;
+    height: calc(100% - 100px);
+}
+
+.wrap_col h4, .category h3 {
+    color: var(--light);
+}
+
+.wrap_col h4 {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 0.5rem;
 }
 
 .navbar {
@@ -332,44 +353,10 @@ img {
     margin-left: 2.5rem;
 }
 
-.categories {
-    height: 100%;
-    padding-bottom: 0;
-}
-
-.music {
-    max-width: 1440px;
-    overflow-y: auto;
-    height: calc(100% - 100px);
-}
-
-.wrap_col h4, .category h3 {
-    color: var(--light);
-}
-
-.wrap_col h4 {
-    text-align: center;
-    font-size: 17px;
-    margin-top: 0.5rem;
-}
-
-.row .main_categories {
-    justify-content: flex-start;
-}
 
 .played {
     margin: 2rem 0 1rem 0.5rem;
 } 
-
-.recently_py h6 {
-    font-size: 13px;
-    text-align: center;
-    margin-top: 0.25rem;
-}
-
-.createdforyou, .popular {
-    margin: 2rem 0 1rem 0.5rem;
-}
 
 .category h3 {
     font-size: 24px;
@@ -379,6 +366,26 @@ img {
     font-size: 14px;
     margin-top: 0.5rem;
 }
+
+.row .main_categories {
+    justify-content: flex-start;
+}
+
+.recently_py h6 {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 0.25rem;
+}
+
+
+.wrap_img {
+    position: relative;
+    float: left;
+}
+
+.createdforyou, .popular {
+    margin: 2rem 0 1rem 0.5rem;
+} 
 
 .artist img {
     object-fit: cover;
@@ -514,9 +521,32 @@ img {
     color: var(--light);
 }
 
+#header a:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 .icons:hover img {
     cursor: pointer;
     filter: brightness(100%);
+}
+
+.wrap_img:hover img {
+    filter: brightness(0.7);
+}
+
+.wrap_img:hover .play_hover {
+    display: block;
+}
+
+.wrap_img .play_hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -2rem -2rem;
+    display: none;
+    font-size: 60px;
+    color: white;
 }
 
 .song h6:hover {
@@ -524,10 +554,6 @@ img {
     text-decoration: underline;
 }
 
-#header a:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-}
 
 .center .fa-circle-play:hover {
     cursor: pointer;
@@ -543,9 +569,7 @@ img {
     display: block;
 }
 
-.cover img:hover {
-    filter: brightness(0.7);
-}
+
 /* #endregion HOVER */
 
 /* #region RESPONSIVE */
@@ -745,5 +769,7 @@ img {
     }
 }
 /* #endregion RESPONSIVE */
+
+
 
 
