@@ -369,10 +369,6 @@ img {
     justify-content: flex-start;
 }
 
-.wrap_img {
-    transition: 1s ease-in-out;
-}
-
 .recently_py h6 {
     font-size: 13px;
     text-align: center;
@@ -382,6 +378,7 @@ img {
 .wrap_img {
     position: relative;
     float: left;
+    transition: 1s ease-in-out;
 }
 
 
