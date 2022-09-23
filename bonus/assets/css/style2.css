@@ -760,7 +760,12 @@ img {
 
 }
 
-
+@media screen and (max-height: 600px) {
+    .new_pl {
+        height: 180px;
+        overflow: auto;
+    }
+}
 /* #endregion RESPONSIVE */
 
 
