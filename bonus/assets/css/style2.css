@@ -526,7 +526,7 @@ img {
 
 #header a:hover {
     cursor: pointer;
-    transform: scale(1.1.2);
+    transform: scale(1.2);
     border: 1px solid var(--accent);
     color: var(--accent);
 }
